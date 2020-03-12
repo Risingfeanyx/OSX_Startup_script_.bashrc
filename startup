@@ -1,0 +1,10 @@
+#at initialization
+brew.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install neofetch cask ; 
+brew cask install google-chrome steam ; 
+
+
+echo "brew update&
+clear
+neofetch" >> .bashrc ; source .bashrc
