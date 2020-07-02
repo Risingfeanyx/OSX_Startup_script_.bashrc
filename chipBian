@@ -1,1 +1,30 @@
 
+cp -v /etc/apt/sources.list{,.bak_$(date +%F)}
+
+cp -v /etc/apt/preferences{,.bak_$(date +%F)}
+
+sed 's/opensource.nextthing.co/chip.jfpossibilities.com/' /etc/apt/sources.list
+
+sed 's/opensource.nextthing.co/chip.jfpossibilities.com/' /etc/apt/preferences
+
+sudo apt update
+
+sudo apt upgrade -y
+
+sudo apt install locales
+
+sudo locale-gen en_US en_US.UTF-8
+
+sudo dpkg-reconfigure locales
+
+sudo dpkg-reconfigure locales
+
+
+sudo apt-get install openssh-server nmcli neofetch calibre i3 sterm qrencode -y
+
+
+echo 'exec calibre-server &> calibre_logs_$(date +%Y-%m-%d.log)' >> .i3/config
+
+echo 'exec stterm >> .i3/config
+
+curl https://raw.githubusercontent.com/Risingfeanyx/dotfiles/master/.bashrc_pocket_chip >> .bashrc
