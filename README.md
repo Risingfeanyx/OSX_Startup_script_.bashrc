@@ -14,5 +14,4 @@ It is largely dependent on <a href="https://chocolatey.org">Choco</a>, and will 
 
 curl https://raw.githubusercontent.com/Risingfeanyx/machine_startups/master/Windows_startup_1.bat -O Windows_startup_1.bat
 curl https://github.com/Risingfeanyx/machine_startups/blob/master/Windows_startup_2.bat -O Windows_startup_2.bat
-
 start Windows_startup_1.bat
