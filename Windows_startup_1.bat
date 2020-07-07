@@ -3,7 +3,7 @@
 @echo off
 
 echo "Read System info"
-#start /WAIT winver
+start /WAIT winver
 TITLE Install Common Stuff
 
 echo " Install chocolatey Chocolatey is a package manager for Windows (like apt-get or yum but for Windows).  It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer."
