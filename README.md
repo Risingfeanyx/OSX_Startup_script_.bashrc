@@ -5,3 +5,6 @@ a collection of fresh startup scripts for the various OS's I've used.
 
 PocketChip
  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Risingfeanyx/machine_startups/master/i3_pocketChipBian)"
+ 
+ Windows Autoscript comingˢᵒᵒⁿ
+It is largely dependent on <a href="http://https://chocolatey.org>the Choco Package Manager</a>, and will have multiple options for each level of user. 
