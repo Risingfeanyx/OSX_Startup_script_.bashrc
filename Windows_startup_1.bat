@@ -18,4 +18,13 @@ cleanmgr.exe /cdrive
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 #installs chocolatey.org. "Chocolatey is a software management solution unlike anything else you've ever experienced on Windows. Chocolatey brings the concepts of true package management to allow you to version things, manage dependencies and installation order, better inventory management, and other features."
 
-start Windows_startup_2.bat
+
+choco feature enable -n allowGlobalConfirmation
+echo "This is where the fun begings. Installs commonly used programs. Edit batch file to add/remove. Good for a general catch-all list of programs."
+choco install steam firefox chrome libreoffice malwarebytes unchecky vlc -y 
+choco upgrade all -y
+echo "Removes trace of install script and any unwanted programs"
+start /WAIT /MAX appwiz.cpl
+echo "show system specs and delete any non-essential start ups"
+start /WAIT msconfig
+echo "reset to apply changes"
