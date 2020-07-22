@@ -12,7 +12,7 @@ echo "Create a restore point, just in case things go haywire. Doesn't actually d
 start /WAIT systempropertiesprotection
 
 echo "Clean up Junk files"
-#cleanmgr.exe /cdrive
+cleanmgr.exe /cdrive
 
 
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
