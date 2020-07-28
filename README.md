@@ -19,3 +19,9 @@ curl https://raw.githubusercontent.com/Risingfeanyx/machine_startups/master/Wind
 start Windows_startup_1.bat
 exit
 ```
+
+
+Pull all Gits
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Risingfeanyx/machine_startups/master/down_all_gits)"
+```
