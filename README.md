@@ -20,6 +20,12 @@ start Windows_startup_1.bat
 exit
 ```
 
+Everdrive GBA
+
+```
+Power on+R to update firmware to match up with .bin file
+```
+
 
 Pull all Gits
 ```
